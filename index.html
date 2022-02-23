@@ -6,39 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>report07</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/default.css">
 </head>
 <style>
    
 </style>
 <body>
-     <!-- 스킵메뉴 -->
-    <section class="skip-menu">
-        <a href="#">home</a>
-        <a href="#">notice</a>
-        <a href="#">gallery</a>
-        <a href="#">family</a>
-    </section>
-    <!-- 팝업 -->
-    <section class="popup-par" style="display:none;">
-        <section class="popup">
-            <div class="btn-close"></div>
-            <div class="popup-main">
-                <div class="img-box">
-                    <a href="#">
-                        <img src="./images/mmain-banner01.jpg" alt="콜드블루">
-                    </a>
-                </div>
-            </div>
-            <div class="chk-box">
-                <label>
-                    <input type="checkbox">
-                    24시간 열지 않음
-                </label>
-            </div>
-        </section>
-    </section>
-
+   
     <section class="wrap">
         <header class="header">
             <h1>로고</h1>
@@ -99,47 +73,62 @@
         <section class="contents clearfix">
             <div class="notice">
                 <h2>공지사항</h2>
-                <ul>
-                    <li><a href="#">공지사항 입니다.<span class="day">2022-02-22</span></a></li>
-                    <li><a href="#">공지사항 입니다.<span class="day">2022-02-22</span></a></li>
-                    <li><a href="#">공지사항 입니다.<span class="day">2022-02-22</span></a></li>
-                    <li><a href="#">공지사항 입니다.<span class="day">2022-02-22</span></a></li>
-                    <li><a href="#">공지사항 입니다.<span class="day">2022-02-22</span></a></li>
-                    <li><a href="#">공지사항 입니다.<span class="day">2022-02-22</span></a></li>
-                   
+                <ul class="notice-txt">
+                    <li class="title"><a href="#">공지사항-1<span class="day">2022-02-22</span></a></li>
+                    <li class="title"><a href="#">공지사항-2<span class="day">2022-02-22</span></a></li>
+                    <li class="title"><a href="#">공지사항-3<span class="day">2022-02-22</span></a></li>
+                    <li class="title"><a href="#">공지사항-4<span class="day">2022-02-22</span></a></li>
+                    <li class="title"><a href="#">공지사항-5<span class="day">2022-02-22</span></a></li>
+                    <li class="title"><a href="#">공지사항-6<span class="day">2022-02-22</span></a></li>
                 </ul>
             </div>
             <div class="gallery">
                 <h2>갤러리</h2>
-                <ul>
-                    <li><a href="#"><img src="./images/img-work01.jpg" alt="워크1"></a></li>
-                    <li><a href="#"><img src="./images/img-work02.jpg" alt="워크2"></a></li>
-                    <li><a href="#"><img src="./images/img-work03.jpg" alt="워크3"></a></li>
+                <ul class="gallery-list">
+                    <li class="gall"><a href="#"><img src="./images/img-work01.jpg" alt="갤1"></a></li>
+                    <li class="gall"><a href="#"><img src="./images/img-work02.jpg" alt="갤2"></a></li>
+                    <li class="gall"><a href="#"><img src="./images/img-work03.jpg" alt="갤3"></a></li>
                 </ul>
             </div>
             <div class="banner">
-                <a href="#"><img src="./images/banner-mid.jpg" alt="배너"></a>
+                <a href="#"><img src="./images/img-work04.jpg" alt="배너"></a>
             </div>
         </section>
         <footer class="footer">
             <h1>로고</h1>
             <address class="copy">카피라이트</address>
             <div class="family">
-                <p class="on">패밀리 사이트</p>
-                <ul>
-                    <li><a href="#">네이버</a></li>
-                    <li><a href="#">네이버</a></li>
-                    <li><a href="#">네이버</a></li>
-                </ul>
+                <select class="f-site">
+                    <option value="00">패밀리사이트</option>
+                    <option value="01">패밀리1</option>
+                    <option value="02">패밀리2</option>
+                    <option value="03">패밀리3</option>
+                    <option value="04">패밀리4</option>
+                </select>
             </div>
         </footer>
-
     </section>
- 
+    
+    <!-- 모달팝업 -->
+    <div class="modal">
+        <div class="conatiner">
+            <div class="inner">
+                <div class="modal-tit">
+                    모달타이틀
+                </div>
+                <div class="modal-txt">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, illum aut hic ullam deleniti voluptatibus sapiente iure ab distinctio eligendi quas fuga qui ex? Asperiores excepturi iure at non ab.
+                </div>
+                <div class="clearfix">
+                    <button class="btn-modal-close f-right" type="button">닫기</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
 <!-- jQuery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- jQuery cookie -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
 
@@ -163,18 +152,37 @@
                 },'3000');
             }else{
                 num = 1;
-                $('main ul').animate({
+                $('.main ul').animate({
                     left:'0'
                 },'3000');
             }
         },3000);
     });
 
-    // 패밀리사이트
-    $('footer .fam p').click(function(){
-        $(this).toggleClass("on");
-        $('footer .fam ul').stop().slideToggle();
-    });
+    // 공지사항
+    let btnClose = document.querySelector('.btn-modal-close')
+    let modalEl = document.querySelector('.modal');
+    let modalTitle = document.querySelector('.modal-tit')
+    let titEls = document.querySelectorAll('.notice-txt .title');
+
+
+    for(let idx=0;idx<titEls.length;idx++){
+        titEls[idx].addEventListener('click',function(){
+            modalTitle.innerText = this.innerText;
+            modalEl.style.display='block';
+        });
+    }
+
+
+    // 모달
+    btnClose.addEventListener('click',function(){
+        modalEl.style.display='none';
+    })
+
+  
+
+    
+
     
 </script>
     
